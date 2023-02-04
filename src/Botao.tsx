@@ -2,7 +2,7 @@ import React from "react";
 
 function Botao() {
 	const classButton =
-		"absolute w-16 h-16 top-50 left-38 bg-gradient-to-b from-[#2D2A37] to-[#2D2A37] bg-gray-900 rounded-full shadow-lg ";
+		"bg-[#2D2A37]  shadow-[_0_2px_4px_rgba(0,0,0,0.6)] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)] text-white font-bold w-16 h-16 rounded-full ml-2 mt-5";
 
 	const classSpan =
 		"flex flex-col justify-center items-center h-full text-white font-bold text-lg ";
