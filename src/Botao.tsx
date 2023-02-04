@@ -5,7 +5,7 @@ function Botao() {
 		"bg-[#2D2A37]  shadow-[_0_2px_4px_rgba(0,0,0,0.6)] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)] text-white font-bold w-16 h-16 rounded-full ml-2 mt-5";
 
 	const classSpan =
-		"flex flex-col justify-center items-center h-full text-white font-bold text-lg ";
+		"select-none flex flex-col justify-center items-center h-full text-white font-bold text-lg ";
 
 	return (
 		<div className="flex">
