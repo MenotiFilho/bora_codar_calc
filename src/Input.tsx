@@ -1,6 +1,6 @@
 const Input: React.FC<{ displayValue: string }> = ({ displayValue }) => {
 	return (
-		<div className="text-right h-1/4 text-white font-bold text-7xl flex items-center overflow-hidden">
+		<div className="text-right h-1/4 w-full text-white font-bold text-7xl flex items-center overflow-clip">
 			<div
 				style={{
 					fontSize: "7xl",
@@ -9,7 +9,7 @@ const Input: React.FC<{ displayValue: string }> = ({ displayValue }) => {
 					textOverflow: "ellipsis",
 				}}
 			>
-				{displayValue}
+				<div>{displayValue}</div>
 			</div>
 		</div>
 	);

@@ -21,27 +21,27 @@ const Calculadora: React.FC = () => {
 	};
 
 	return (
-		<div className=" bg-[#2D2A37] w-[356px] h-[566px] rounded-[40px] shadow-[_5px_5px_5px_rgba(0,0,0,0.6)] flex flex-col">
+		<div className=" bg-[#2D2A37] w-[360px] h-[566px] rounded-[40px] shadow-[_5px_5px_5px_rgba(0,0,0,0.6)] flex flex-col items-center">
 			<Input displayValue={value} />
-			<div className="flex">
+			<div className="flex gap-2">
 				<Botao value={value} buttonValue={"1"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"2"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"3"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"+"} handleClick={handleClick} />
 			</div>
-			<div className=" flex">
+			<div className=" flex gap-2">
 				<Botao value={value} buttonValue={"4"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"5"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"6"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"-"} handleClick={handleClick} />
 			</div>
-			<div className="flex">
+			<div className="flex gap-2">
 				<Botao value={value} buttonValue={"7"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"8"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"9"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"*"} handleClick={handleClick} />
 			</div>
-			<div className="flex">
+			<div className="flex gap-2">
 				<Botao value={value} buttonValue={"C"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"0"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"="} handleClick={handleClick} />
