@@ -8,8 +8,7 @@ interface Props {
 
 const Botao: React.FC<Props> = ({ value, buttonValue, handleClick }) => {
 	const classButton =
-		"bg-[#2D2A37] shadow-[_0_2px_4px_rgba(0,0,0,0.6)] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)] text-white font-bold w-20 h-20 rounded-full mt-5";
-
+		"bg-[#2D2A37] shadow-[_0_2px_4px_rgba(0,0,0,0.6)] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)] text-white font-bold w-[70px] h-[70px] rounded-full";
 	const classSpan =
 		"select-none flex flex-col justify-center items-center h-full text-white font-bold text-lg";
 
