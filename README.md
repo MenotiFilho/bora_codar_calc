@@ -1,6 +1,6 @@
 # Calculadora do #BoraCodar 🚀
 
-Desafio feito para o 4º #BoraCodar, uma calculadora feita usando react.
+Desafio feito para o 5º #BoraCodar, uma calculadora feita usando react.
 [Veja a demo aqui! 🎉](https://bora-codar-calc.vercel.app/)
 
 ## Tecnologias
