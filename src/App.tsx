@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Calculadora from "./Calculadora";
+import "./App.css";
 
 function App() {
 	return (
