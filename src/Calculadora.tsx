@@ -4,16 +4,18 @@ import Input from "./Input";
 
 const Calculadora: React.FC = () => {
 	const [value, setValue] = useState("");
+	const [result, setResult] = useState("");
 
 	const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
 		const buttonValue = (e.target as HTMLDivElement).textContent;
 		if (buttonValue === "C") {
+			setResult("");
 			setValue("");
 		} else if (buttonValue === "=") {
 			try {
-				setValue(eval(value).toString());
+				setResult(eval(value).toString());
 			} catch (error) {
-				setValue("Error");
+				setResult("Error");
 			}
 		} else if (buttonValue === "±") {
 			setValue(value.charAt(0) === "-" ? value.substring(1) : "-" + value);
@@ -24,7 +26,10 @@ const Calculadora: React.FC = () => {
 				setValue(value + ".");
 			}
 		} else if (buttonValue === "%") {
-			setValue((eval(value) / 100).toString());
+			const percentage = (eval(value) / 100).toString();
+			if (percentage === "NaN") {
+				return;
+			} else setResult(percentage);
 		} else {
 			setValue(value + buttonValue);
 		}
@@ -32,7 +37,7 @@ const Calculadora: React.FC = () => {
 
 	return (
 		<div className=" bg-[#2D2A37] gap-2 w-[360px] h-[566px] rounded-[40px] shadow-[_5px_5px_5px_rgba(0,0,0,0.6)] flex flex-col items-center">
-			<Input displayValue={value} />
+			<Input displayValue={value} displayResult={result} />
 			<div className="flex gap-2">
 				<Botao value={value} buttonValue={"±"} handleClick={handleClick} />
 				<Botao value={value} buttonValue={"←"} handleClick={handleClick} />
